@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome to Firebase Hosting</title>
+    
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/5.7.3/firebase-app.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/5.7.3/firebase-auth.js"></script>
+        <script defer src="/__/firebase/5.7.3/firebase-database.js"></script>
+        <script defer src="/__/firebase/5.7.3/firebase-messaging.js"></script>
+        <script defer src="/__/firebase/5.7.3/firebase-storage.js"></script>
+        <script defer src="/__/firebase/5.7.3/firebase-firestore.js"></script>
+        <!-- initialize the SDK after all desired features are loaded -->
+        <script defer src="/__/firebase/init.js"></script>
+        <link href="project.css" type="text/css" rel="stylesheet">
+        <style media="screen">
+          
+        </style>
+  </head>
+  <body>
+
+      <div  id="Login_div" class="main">   
+ <h1 class="header">Welcome to Spinzomedia</h1>
+ 
+   <input type="email" placeholder="Email..." id="email_field" />
+   <input type="password" placeholder="password..." id="password_field"/>
+
+   <button id="login">Login</button>
+  
+</div>
+<div id="user_div">
+  <h1>Welcome</h1>
+<h2 id="Heading">no Data</h2>
+    
+  <button id="logout">Logout</button>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOJE7S8UkG7q0ZNoJArx4tS8JPTLppD1o",
+    authDomain: "projectend2-3496e.firebaseapp.com",
+    databaseURL: "https://projectend2-3496e.firebaseio.com",
+    projectId: "projectend2-3496e",
+    storageBucket: "",
+    messagingSenderId: "501538475248"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="app2.js"></script>
+  </body>
+</html>
+
